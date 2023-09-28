@@ -1,0 +1,25 @@
+﻿@using Unidad2_Act2.Models.ViewModel;
+@model IndexViewModel;
+
+@{
+	Layout = "Layout";
+}
+
+<form class="datos" method="post" action="~/Home/Index">
+    <h2>Conversión</h2>
+    <label>Conversión USD/MXN</label>
+    <input type="number" required name="cantidad" placeholder="Cantidad MX/USD" step="any" >
+    <div>
+        <label>
+        <input required value="mxn" type="radio" id="mxn" name="unidad"/>MXN
+
+        </label>
+        <label>
+            <input required value="usd" type="radio" id="usd" name="unidad"/>USD
+
+        </label>
+    </div>
+    <input type="submit" />
+    <br/>
+    <label>La cantidad es: @Model.Resultado</label>
+</form>
