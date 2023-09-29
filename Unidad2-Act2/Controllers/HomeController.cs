@@ -13,7 +13,7 @@ namespace Unidad2_Act2.Controllers
 			};
 			if (unidad!=null && cantidad!=0) 
 			{
-				decimal MonedaValor = (decimal)((unidad == "mxn" || unidad == "usd") ? 17.81 : 0.057);
+				decimal MonedaValor = (decimal)((unidad == "mxn" || unidad == "usd") ? 18 : 0.057);
 			
 				if (unidad == "mxn"){
 					vm.Resultado = Math.Round((cantidad * MonedaValor),2);
